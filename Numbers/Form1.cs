@@ -27,13 +27,38 @@ namespace Numbers
             richTextBox1.AppendText(c.ToString("0.000000E0") + "\n");
             richTextBox1.AppendText(c.ToString("0.000E0") + "\n");
 
-
-
-
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an intiger");
+            }
+            string s2 = "3.2";
+            try
+            {
+                int i2 = int.Parse(s2);
+            }
+            catch
+            {
+                MessageBox.Show(s2 + "is not an interger");
+                int i2 = 0;
+            }
+            string s3 = "pi";
+            try
+            {
+                double d2 = double.Parse(s3);
+            }
+            catch
+            {
+                double d2 = 0;
+            }
         }
-
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         { 
+
     }   }
 
 
